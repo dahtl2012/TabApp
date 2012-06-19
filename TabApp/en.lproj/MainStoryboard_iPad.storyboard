@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="1.1" toolsVersion="2182" systemVersion="11E53" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" initialViewController="w0S-ix-VsW">
+    <dependencies>
+        <deployment defaultVersion="1296" identifier="iOS"/>
+        <development defaultVersion="4200" identifier="xcode"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1181"/>
+    </dependencies>
+    <scenes>
+        <!--Tab App First View Controller - First-->
+        <scene sceneID="IZ3-fO-m3J">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hzo-xO-lel" sceneMemberID="firstResponder"/>
+                <viewController title="First" id="fsL-aO-kr2" customClass="TabAppFirstViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4G8-GC-E8T" customClass="CPTGraphHostingView">
+                        <rect key="frame" x="0.0" y="20" width="768" height="955"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" barStyle="blackOpaque" id="gFd-cv-4qa">
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Home" id="fGe-zU-zyw"/>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Home" image="first" id="hPp-R0-5xe"/>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="blackTranslucent"/>
+                    <connections>
+                        <outlet property="graphHost" destination="4G8-GC-E8T" id="WUS-kw-Fc4"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="653" y="-138"/>
+        </scene>
+        <!--Bandalandabat View - Bandalandabat-->
+        <scene sceneID="M8s-Kb-cq3">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9Za-7N-679" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="ryq-x3-Y0l" customClass="BandalandabatView" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7jf-1b-PPt">
+                        <rect key="frame" x="0.0" y="20" width="768" height="955"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" barStyle="blackOpaque" id="M3k-b3-sPb">
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Bandalandabat" id="MNF-uo-9lU">
+                                        <barButtonItem key="leftBarButtonItem" title="Fuck" id="WZN-t7-VDP">
+                                            <connections>
+                                                <action selector="FuckButton:" destination="ryq-x3-Y0l" id="4Ue-yQ-bvM"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" id="uev-qF-tcg">
+                                <rect key="frame" x="26" y="63" width="269" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Bandalandabat" image="second" badgeValue="1" id="ryW-Sf-rlq"/>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="blackTranslucent"/>
+                    <connections>
+                        <outlet property="BandaLabel" destination="uev-qF-tcg" id="UJd-ne-bj1"/>
+                        <outlet property="BandaTab" destination="ryW-Sf-rlq" id="L4c-36-1dR"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="653" y="1154"/>
+        </scene>
+        <!--Tab App Second View Controller - Second-->
+        <scene sceneID="GaR-ga-kiy">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ybm-tQ-Xot" sceneMemberID="firstResponder"/>
+                <viewController title="Second" id="d1k-SU-rq3" customClass="TabAppSecondViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="SJw-eS-lsH">
+                        <rect key="frame" x="0.0" y="20" width="768" height="955"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="EVc-V2-vpa">
+                                <rect key="frame" x="0.0" y="44" width="768" height="911"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </scrollView>
+                            <navigationBar contentMode="scaleToFill" barStyle="blackOpaque" id="MvE-Uw-wfU">
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Irgendwas" id="BeY-HV-XwP"/>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Irgendwas" image="second" id="n0M-rg-KtQ"/>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="blackTranslucent"/>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="653" y="498"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="7tD-yz-cPZ">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="e34-J3-CR7" sceneMemberID="firstResponder"/>
+                <tabBarController id="w0S-ix-VsW" sceneMemberID="viewController">
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="blackTranslucent"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="TMy-Xy-DPr">
+                        <rect key="frame" x="0.0" y="431" width="320" height="49"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="fsL-aO-kr2" kind="relationship" relationship="viewControllers" id="aZr-fT-FNp"/>
+                        <segue destination="d1k-SU-rq3" kind="relationship" relationship="viewControllers" id="XJF-SS-S6i"/>
+                        <segue destination="ryq-x3-Y0l" kind="relationship" relationship="viewControllers" id="U75-e4-ks2"/>
+                    </connections>
+                </tabBarController>
+            </objects>
+            <point key="canvasLocation" x="-844" y="452"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="first" width="16" height="16"/>
+        <image name="second" width="16" height="16"/>
+    </resources>
+    <classes>
+        <class className="BandalandabatView" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/BandalandabatView.h"/>
+            <relationships>
+                <relationship kind="action" name="FuckButton:"/>
+                <relationship kind="outlet" name="BandaLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="BandaTab" candidateClass="UITabBarItem"/>
+            </relationships>
+        </class>
+        <class className="CPTGraphHostingView" superclassName="UIView">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/CPTGraphHostingView.h"/>
+        </class>
+        <class className="TabAppFirstViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/TabAppFirstViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="graphHost" candidateClass="CPTGraphHostingView"/>
+            </relationships>
+        </class>
+        <class className="TabAppSecondViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/TabAppSecondViewController.h"/>
+        </class>
+    </classes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar" statusBarStyle="blackTranslucent"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
+</document>
